@@ -1,0 +1,23 @@
+#/bin/bash
+
+# deps:
+# sudo apt install autoconf bison build-essential libssl-dev libyaml-dev 
+# sudo apt install libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev
+# sudo apt install libgdbm5 libgdbm-dev
+
+# rbenv
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+# ruby
+rbenv install 2.5.1 --verbose
+rbenv global 2.5.1
+
+# one-time:
+# echo "gem: --no-document" > ~/.gemrc
+
+gem install bundler
+gem install rails

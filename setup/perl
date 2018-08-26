@@ -1,0 +1,26 @@
+#/bin/bash
+
+
+# Perl: CPANM
+#
+# This is a pre-compiled source code for the `cpanm` (cpanminus) program.
+# For more details about how to install cpanm, go to the following URL:
+#
+#   https://github.com/miyagawa/cpanminus
+#
+# Quickstart: 
+# Run the following command and it will install itself for you.
+# You might want to run it as a root with sudo if you want to install
+# to places like `/usr/local/bin`
+#
+#   curl -L https://cpanmin.us | perl - App::cpanminus
+#
+# or with wget:
+#
+#   wget -O - https://cpanmin.us | perl - App::cpanminus
+#
+
+
+# perlbrew - perl env manager:
+#
+# https://metacpan.org/pod/distribution/App-perlbrew/script/perlbrew
